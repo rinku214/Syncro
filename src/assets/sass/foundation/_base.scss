@@ -11,6 +11,8 @@ body {
   font-weight: 700;
   color: #000;
 
+  padding-top: 65px;
+
   &.is-open {
     overflow: hidden;
   }
@@ -19,3 +21,4 @@ body {
 html,
 body {
 }
+

@@ -9,11 +9,15 @@
 }
 
 @mixin inner {
-  padding-inline: 16px;
-  max-width: calc(1280px + 90px * 2);
+  padding-inline: 80px;
+  max-width: calc(1280px + 80px * 2);
   margin-inline: auto;
 
-  @include mq("pc") {
-    padding-inline: 90px;
+  @include mq("tb") {
+    padding-inline: 40px;
+  }
+
+  @include mq("sp") {
+    padding-inline: 16px;
   }
 }

@@ -1,0 +1,10 @@
+@use "../../foundation/" as *;
+
+.c-button__login {
+  font-size: 14px;
+  color: $accent-blue;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

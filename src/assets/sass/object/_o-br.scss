@@ -1,0 +1,27 @@
+@use ".././foundation/" as *;
+
+.o-br__pc {
+  @include mq("tb") {
+    display: none;
+  }
+}
+
+.o-br__tb {
+  display: none;
+
+  @include mq("tb") {
+    display: block;
+  }
+
+  @include mq("sp") {
+    display: none;
+  }
+}
+
+.o-br__sp {
+  display: none;
+
+  @include mq("sp") {
+    display: block;
+  }
+}
