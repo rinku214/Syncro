@@ -37,7 +37,7 @@
   &__SitTitle {
     font-size: 24px;
     font-weight: 700;
-    color: #222;
+    color: $accent-blue;
 
     @media (max-width: 374px) {
       font-size: 20px;

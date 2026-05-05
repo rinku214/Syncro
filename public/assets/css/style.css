@@ -243,6 +243,10 @@ body.is-open {
 	display: none;
 }
 
+.o-accent-color {
+	color: #108bc8;
+}
+
 .c-button__download {
 	background: #00aaff;
 	border-radius: 28px;
@@ -321,7 +325,7 @@ body.is-open {
 }
 
 .p-hero__SitTitle {
-	color: #222;
+	color: #00aaff;
 	font-size: 24px;
 	font-weight: 700;
 }
@@ -464,6 +468,153 @@ body.is-open {
 	font-size: 14px;
 }
 
+.p-features__inner {
+	padding-top: 106px;
+}
+
+.p-features__items {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	margin-inline: auto;
+	margin-top: 192px;
+	max-width: 1440px;
+	padding-bottom: 180px;
+}
+
+.p-features__item {
+	background: #fafafa;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 0px 32px 32px 0px;
+	display: flex;
+	margin-right: auto;
+	overflow: hidden;
+	padding: 70px 390px 70px 91px;
+	position: relative;
+}
+
+.p-features__item::after,
+.p-features__item::before {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	position: absolute;
+}
+
+.p-features__item:nth-child(1)::after {
+	background-image: url("../img/feature-image-01.png");
+	bottom: -4px;
+	display: block;
+	height: 333px;
+	right: -4px;
+	width: 350px;
+}
+
+.p-features__item:nth-child(2)::before {
+	background-image: url("../img/feature-image-02.png");
+	bottom: -4px;
+	display: block;
+	height: 333px;
+	left: -14px;
+	width: 350px;
+}
+
+.p-features__item:nth-child(3)::after {
+	background-image: url("../img/feature-image-03.png");
+	bottom: -4px;
+	display: block;
+	height: 333px;
+	right: -4px;
+	width: 350px;
+}
+
+.p-features__item:nth-child(4)::before {
+	background-image: url("../img/feature-image-04.png");
+	bottom: -4px;
+	display: block;
+	height: 333px;
+	left: -14px;
+	width: 350px;
+}
+
+.p-features__item:nth-child(2),
+.p-features__item:nth-child(4) {
+	border-radius: 32px 0px 0px 32px;
+	margin-left: auto;
+	margin-right: 0;
+	padding: 70px 91px 70px 390px;
+}
+
+.p-features__item-content {
+	max-width: 630px;
+}
+
+.p-features__item-head {
+	align-items: center;
+	display: flex;
+	gap: 35px;
+	margin-bottom: 25px;
+}
+
+.p-features__item-function {
+	font-size: 20px;
+}
+
+.p-features__item-number {
+	color: #108bc8;
+	font-family: Caudex, serif;
+	font-size: 48px;
+	font-weight: 400;
+}
+
+.p-features__item-ravel {
+	border: 1px solid #108bc8;
+	border-radius: 5px;
+	color: #108bc8;
+	font-size: 25px;
+	font-weight: 700;
+	height: -moz-fit-content;
+	height: fit-content;
+	padding: 5px 10px;
+}
+
+.p-features__item-title {
+	border-bottom: 1px solid #222;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1%;
+	line-height: 40px;
+	padding-bottom: 5px;
+}
+
+.p-features__item-title--font-size {
+	color: #108bc8;
+	font-size: 46px;
+	line-height: 60px;
+}
+
+.p-features__item-text {
+	font-size: 19px;
+	font-weight: 700;
+	letter-spacing: 3%;
+	line-height: 27px;
+	padding-top: 16px;
+}
+
+@media (max-width: 1107px) {
+
+.p-features__item-title {
+	font-size: 25px;
+}
+
+.p-features__item-title--font-size {
+	font-size: 38px;
+	line-height: 50px;
+}
+
+}
+
 @media (max-width: 1024px) {
 
 .inner {
@@ -491,6 +642,61 @@ body.is-open {
 
 .p-hero__image img {
 	max-width: 600px;
+}
+
+.p-features__items {
+	margin-top: 160px;
+	padding-bottom: 170px;
+}
+
+.p-features__item {
+	flex-direction: column;
+	margin-right: 16px;
+	padding: 30px 30px 390px 30px;
+}
+
+.p-features__item:nth-child(1)::after {
+	bottom: -3px;
+	right: -3px;
+}
+
+.p-features__item:nth-child(2)::before {
+	bottom: -3px;
+	left: -11px;
+}
+
+.p-features__item:nth-child(3)::after {
+	bottom: -3px;
+	right: -3px;
+}
+
+.p-features__item:nth-child(4)::before {
+	bottom: -3px;
+	left: -11px;
+}
+
+.p-features__item:nth-child(2),
+.p-features__item:nth-child(4) {
+	margin-left: 16px;
+	padding: 30px 30px 390px 30px;
+}
+
+.p-features__item-ravel {
+	font-size: 16px;
+}
+
+.p-features__item-title {
+	font-size: 19px;
+}
+
+.p-features__item-title--font-size {
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.p-features__item-text {
+	font-size: 16px;
+	line-height: 24px;
 }
 
 }
@@ -594,6 +800,32 @@ body.is-open {
 
 .p-hero__image img {
 	max-width: 343px;
+}
+
+.p-features__items {
+	margin-top: 145px;
+	padding-bottom: 160px;
+}
+
+.p-features__item-head {
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 0px;
+}
+
+.p-features__item-title {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.p-features__item-title--font-size {
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.p-features__item-text {
+	font-size: 12px;
+	line-height: 20px;
 }
 
 }
