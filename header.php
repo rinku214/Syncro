@@ -13,18 +13,21 @@
 <header class="l-header">
     <div class="l-header__inner">
         <div class="l-header__logo">
-            <a href="#">LOGO</a>
+            <a href="#">Syncro</a>
         </div>
 
         <nav class="l-header__nav" id="js-drawer-target">
             <ul class="l-header__list">
-                <li class="l-header__item <?php if (is_front_page()) echo 'is-active'; ?>"><a href="<?php echo home_url(); ?>">Home</a></li>
-                <li class="l-header__item <?php if (is_page('About')) echo 'is-active'; ?>"><a href="<?php echo home_url('About'); ?>">About</a></li>
-                <li class="l-header__item <?php if (is_page('Service')) echo 'is-active'; ?>"><a href="<?php echo home_url('Service'); ?>">Service</a></li>
-                <li class="l-header__item <?php if (is_page('News')) echo 'is-active'; ?>"><a href="<?php echo home_url('News'); ?>">News</a></li>
-                <li class="l-header__item <?php if (is_page('Contact')) echo 'is-active'; ?>"><a href="<?php echo home_url('Contact'); ?>">Contact</a></li>
+                <li class="l-header__item"><a href="worries">お悩み</a></li>
+                <li class="l-header__item"><a href="features">特徴</a></li>
+                <li class="l-header__item"><a href="usage">使い方</a></li>
+                <li class="l-header__item"><a href="pricing">料金</a></li>
+                <li class="l-header__item"><a href="faq">よくあるご質問</a></li>
             </ul>
-            <a href="<?php echo home_url('Request-for-information'); ?>" class="l-header__nav-button <?php if (is_page('Request-for-information')) echo 'is-active'; ?>">資料請求</a>
+            <div class="l-header__nav-button">
+                <a href="download" class="l-header__nav-button--download">今すぐダウンロード</a>
+                <a href="login" class="l-header__nav-button--login">ログイン</a>
+            </div>
         </nav>
 
         <button

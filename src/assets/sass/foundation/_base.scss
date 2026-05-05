@@ -6,6 +6,11 @@ html {
 }
 
 body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+
   &.is-open {
     overflow: hidden;
   }
