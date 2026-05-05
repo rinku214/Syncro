@@ -1,0 +1,15 @@
+@use "../../foundation/" as *;
+
+.c-section-title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+
+  @include mq("sp") {
+    font-size: 40px;
+  }
+
+  @media (max-width: 374px) {
+    font-size: 32px;
+  }
+}
