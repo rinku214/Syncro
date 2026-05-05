@@ -1,0 +1,53 @@
+@use "../../foundation/" as *;
+
+.p-worries {
+  background: #fafafa;
+
+  &__inner {
+    padding-top: 69px;
+    padding-bottom: 113px;
+  }
+
+  &__title {
+    margin-bottom: 52px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 37px;
+    max-width: 824px;
+    margin-inline: auto;
+  }
+
+  &__item {
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    padding: 58px 16px 80px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-inline: auto;
+
+    &-ravel {
+      font-weight: 700;
+      color: #fff;
+      background: #545c6b;
+      padding: 5px 16px;
+      max-width: 75px;
+      margin-inline: auto;
+      margin-bottom: 24px;
+      border-radius: 5px;
+    }
+
+    &-title {
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    &-text {
+      font-size: 14px;
+    }
+  }
+}

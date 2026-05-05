@@ -51,4 +51,33 @@
     </div>
 </section>
 
+<section class="p-worries" id="worries">
+    <div class="p-worries__inner inner">
+
+        <h1 class="p-worries__title c-section-title">チーム内で<br>こんなお悩みありませんか？</h1>
+
+        <div class="p-worries__items">
+
+            <div class="p-worries__item">
+                <div class="p-worries__item-ravel">課題1</div>
+                <div class="p-worries__item-title">計画が見えない</div>
+                <div class="p-worries__item-text">誰が何をしているか見えず自分の優先順位がわからない</div>
+            </div>
+
+            <div class="p-worries__item">
+                <div class="p-worries__item-ravel">課題2</div>
+                <div class="p-worries__item-title">共有がうまくいかない</div>
+                <div class="p-worries__item-text">報告・連絡に時間が奪われ肝心の作業が進まない</div>
+            </div>
+
+            <div class="p-worries__item">
+                <div class="p-worries__item-ravel">課題3</div>
+                <div class="p-worries__item-title">状況整理が難しい</div>
+                <div class="p-worries__item-text">タスクの漏れや期限直前のミス発覚が防げない</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>
