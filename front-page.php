@@ -80,4 +80,105 @@
     </div>
 </section>
 
+<section class="p-features" id="features">
+    <div class="p-features__inner inner">
+
+        <h1 class="p-features__title c-section-title">Syncroが<br><span class="o-accent-color">そんな問題を解決いたします！</span></h1>
+
+    </div>
+
+    <div class="p-features__items">
+
+        <div class="p-features__item">
+
+            <div class="p-features__item-content">
+                <div class="p-features__item-head">
+                    <div class="p-features__item-function">機能<span class="p-features__item-number">01</span></div>
+                    <div class="p-features__item-ravel">プロジェクト管理</div>
+                </div>
+
+                <div class="p-features__item-title">
+                    管理しやすい+拡張性のあるダッシュボードで<br>
+                    <span class="o-accent-color p-features__item-title--font-size">
+                        必要なタスクの<br>
+                        共有が簡単に・すぐにわかる
+                    </span>
+                </div>
+                <div class="p-features__item-text">
+                    直感的に触ることのできる、自由度の高いダッシュボードが用途に応じて、用意されています。自分でダッシュボードをカスタマイズすることが可能になっているので、使いやすい形を作ることが可能です。
+                </div>
+            </div>
+
+        </div>
+
+        <div class="p-features__item">
+
+            <div class="p-features__item-content">
+                <div class="p-features__item-head">
+                    <div class="p-features__item-function">機能<span class="p-features__item-number">02</span></div>
+                    <div class="p-features__item-ravel">プロジェクト全体の計画</div>
+                </div>
+
+                <div class="p-features__item-title">
+                    一気に共有可能なカレンダーのおかげで<br>
+                    <span class="o-accent-color p-features__item-title--font-size">
+                        優先度を適切に判断し<br>
+                        情報の漏れを防ぐ
+                    </span>
+                </div>
+                <div class="p-features__item-text">
+                    優先度に応じて色や、マークをつけることが可能なおかげで、チーム内で同じ優先度を持つことにより、情報の漏れや遅れを防ぐことが可能です。また不要なタスクを可視化することにも繋がります。
+                </div>
+            </div>
+
+        </div>
+
+        <div class="p-features__item">
+
+            <div class="p-features__item-content">
+                <div class="p-features__item-head">
+                    <div class="p-features__item-function">機能<span class="p-features__item-number">03</span></div>
+                    <div class="p-features__item-ravel">リソースの可視化</div>
+                </div>
+
+                <div class="p-features__item-title">
+                    自分のリソースを可視化することで<br>
+                    <span class="o-accent-color p-features__item-title--font-size">
+                        無理なタスク分配をなくし<br>
+                        効率を上げる
+                    </span>
+                </div>
+                <div class="p-features__item-text">
+                    自分のリソースを可視化することにより、無理なタスクの割り当てを無くし効率的にタスクをこなすことが可能です。特定の人への負担集中を防ぎ、プロジェクトを健全なペースで成功へ導きます
+                </div>
+            </div>
+
+        </div>
+
+        <div class="p-features__item">
+
+            <div class="p-features__item-content">
+                <div class="p-features__item-head">
+                    <div class="p-features__item-function">機能<span class="p-features__item-number">04</span></div>
+                    <div class="p-features__item-ravel">使いやすいUI</div>
+                </div>
+
+                <div class="p-features__item-title">
+                    直感的にわかりやすいUiを採用しているので<br>
+                    <span class="o-accent-color p-features__item-title--font-size">
+                        初めてでもわかりやすく<br>
+                        簡単に使うことが可能
+                    </span>
+                </div>
+                <div class="p-features__item-text">
+                    マニュアル不要の直感的なデザイン。初めての方でも迷うことなく、チーム全体の生産性を最大化します。様々なツールと連携が可能なので、利便性を高め、チームの生産性を最大化します。
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <?php get_footer(); ?>

@@ -1,0 +1,236 @@
+@use "../../foundation/" as *;
+
+.p-features {
+  &__inner {
+    padding-top: 106px;
+  }
+
+  &__title {
+  }
+
+  &__items {
+    margin-top: 192px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: calc(1280px + 80px * 2);
+    margin-inline: auto;
+    padding-bottom: 180px;
+
+    @include mq("tb") {
+      margin-top: 160px;
+      padding-bottom: 170px;
+    }
+
+    @include mq("sp") {
+      margin-top: 145px;
+      padding-bottom: 160px;
+    }
+  }
+
+  &__item {
+    background: #fafafa;
+    border-radius: 0px 32px 32px 0px;
+    margin-right: auto;
+    padding: 70px 390px 70px 91px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    @include mq("tb") {
+      flex-direction: column;
+      padding: 30px 30px 390px 30px;
+      margin-right: 16px;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: absolute;
+    }
+
+    &:nth-child(1) {
+      &::after {
+        background-image: url("#{$img-path}/feature-image-01.png");
+        width: 350px;
+        height: 333px;
+        display: block;
+        bottom: -4px;
+        right: -4px;
+
+        @include mq("tb") {
+          bottom: -3px;
+          right: -3px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        background-image: url("#{$img-path}/feature-image-02.png");
+        width: 350px;
+        height: 333px;
+        display: block;
+        bottom: -4px;
+        left: -14px;
+
+        @include mq("tb") {
+          bottom: -3px;
+          left: -11px;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        background-image: url("#{$img-path}/feature-image-03.png");
+        width: 350px;
+        height: 333px;
+        display: block;
+        bottom: -4px;
+        right: -4px;
+
+        @include mq("tb") {
+          bottom: -3px;
+          right: -3px;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        background-image: url("#{$img-path}/feature-image-04.png");
+        width: 350px;
+        height: 333px;
+        display: block;
+        bottom: -4px;
+        left: -14px;
+
+        @include mq("tb") {
+          bottom: -3px;
+          left: -11px;
+        }
+      }
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      margin-right: 0;
+      margin-left: auto;
+      border-radius: 32px 0px 0px 32px;
+      padding: 70px 91px 70px 390px;
+
+      @include mq("tb") {
+        padding: 30px 30px 390px 30px;
+        margin-left: 16px;
+      }
+    }
+
+    &-content {
+      max-width: 630px;
+    }
+
+    &-head {
+      display: flex;
+      gap: 35px;
+      align-items: center;
+      margin-bottom: 25px;
+
+      @include mq("sp") {
+        gap: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    &-function {
+      font-size: 20px;
+    }
+
+    &-number {
+      font-size: 48px;
+      color: $accent-text-blue;
+      font-weight: 400;
+      font-family: Caudex, serif;
+    }
+
+    &-ravel {
+      height: fit-content;
+      border: 1px solid $accent-text-blue;
+      color: $accent-text-blue;
+      font-size: 25px;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 5px;
+
+      @include mq("tb") {
+        font-size: 16px;
+      }
+    }
+
+    &-title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 1%;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #222;
+
+      @media (max-width: 1107px) {
+        font-size: 25px;
+      }
+
+      @include mq("tb") {
+        font-size: 19px;
+      }
+
+      @include mq("sp") {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &--font-size {
+        font-size: 46px;
+        line-height: 60px;
+        color: $accent-text-blue;
+
+        @media (max-width: 1107px) {
+          font-size: 38px;
+          line-height: 50px;
+        }
+
+        @include mq("tb") {
+          font-size: 30px;
+          line-height: 35px;
+        }
+
+        @include mq("sp") {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    &-text {
+      padding-top: 16px;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 27px;
+      letter-spacing: 3%;
+
+      @include mq("tb") {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      @include mq("sp") {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+}
