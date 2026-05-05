@@ -25,8 +25,8 @@
                 <li class="l-header__item"><a href="faq">よくあるご質問</a></li>
             </ul>
             <div class="l-header__nav-button">
-                <a href="download" class="l-header__nav-button--download">今すぐダウンロード</a>
-                <a href="login" class="l-header__nav-button--login">ログイン</a>
+                <a href="download" class="l-header__nav-button--download c-button__download">今すぐダウンロード</a>
+                <a href="login" class="l-header__nav-button--login c-button__login">ログイン</a>
             </div>
         </nav>
 

@@ -6,7 +6,6 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #ffffff;
 
   &__inner {
     display: flex;
@@ -14,6 +13,7 @@
     align-items: center;
     padding: 10px 24px;
     border-bottom: 1px solid rgb(0, 0, 0, 30%);
+    background: #ffffff;
   }
 
   &__logo {
@@ -76,50 +76,9 @@
       }
 
       &--download {
-        color: #fff;
-        font-weight: 700;
-        background: $accent-blue;
-        padding: 10px 47px 11px 18px;
-        border-radius: 28px;
-        position: relative;
-
-        &:hover {
-          opacity: 0.8;
-        }
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 28px;
-          height: 100%;
-          width: 1px;
-          background: #d1d1d1;
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          display: block;
-          top: 50%;
-          transform: translateY(-50%);
-          right: 9px;
-          width: 10px;
-          height: 10px;
-          background-image: url("#{$img-path}/arrow.svg");
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: cover;
-        }
       }
 
       &--login {
-        font-size: 14px;
-        color: $accent-blue;
-
-        &:hover {
-          opacity: 0.8;
-        }
       }
     }
   }
