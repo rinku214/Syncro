@@ -1,0 +1,16 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  &.is-open {
+    overflow: hidden;
+  }
+}
+
+html,
+body {
+}

@@ -1,0 +1,178 @@
+@use "../foundation/" as *;
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #7b7b7b;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100px;
+
+    @include mq("sp") {
+      height: 60px;
+    }
+  }
+
+  &__logo {
+    transition: opacity 0.3s ease;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__nav {
+    top: 60px;
+    right: 0;
+    width: auto;
+    height: auto;
+    background: none;
+    flex-direction: row;
+    padding: 0;
+    transform: none;
+    visibility: visible;
+    transition: all 0.3s ease;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &.is-open {
+      transform: translateX(0);
+      visibility: visible;
+    }
+
+    @include mq("sp") {
+      position: fixed;
+      width: 80%;
+      height: calc(100vh - 60px);
+      background: #746e6e;
+      flex-direction: column;
+      padding: 40px 20px;
+      transform: translateX(100%);
+      visibility: hidden;
+      gap: 30px;
+    }
+
+    &-button {
+      display: block;
+      padding: 5px 15px;
+      background: #fff;
+      color: #7b7b7b;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: opacity 0.3s ease;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+    margin-bottom: 0;
+
+    @include mq("sp") {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    a {
+      display: block;
+      padding: 5px 8px;
+      text-decoration: none;
+      color: #fff;
+      transition: opacity 0.3s ease;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &.is-active a {
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  &__drawer-icon {
+    display: none;
+
+    @include mq("sp") {
+      display: block;
+      width: 20px;
+      height: 14px;
+      position: relative;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    &.is-open {
+      .l-header__drawer-line {
+        &:nth-child(1) {
+          transform: rotate(45deg);
+          top: 6px;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  &__drawer-line {
+    background: #fff;
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 6px;
+    }
+    &:nth-child(3) {
+      top: 12px;
+    }
+  }
+
+  &__overlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+    transition: all 0.3s ease;
+    opacity: 0;
+
+    &.is-open {
+      display: block;
+      opacity: 1;
+    }
+
+    @include mq("sp") {
+      display: none;
+    }
+  }
+}
