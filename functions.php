@@ -1,19 +1,12 @@
 <?php
-function my_setup()
-{
-    add_theme_support('post-thumbnails');
-    add_theme_support('automatic-feed-links');
-    add_theme_support('title-tag');
-    add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script'));
-}
-add_action("after_setup_theme", "my_setup");
-
 function my_theme_scripts()
 {
-    // Google Fonts の読み込み
-    wp_enqueue_style('google-fonts-tinos', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap', 'https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap', array(), null);
+    // Google Fonts を1つずつ正しく読み込む
+    wp_enqueue_style('google-fonts-noto', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap', array(), null);
+    wp_enqueue_style('google-fonts-caudex', 'https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap', array(), null);
+    wp_enqueue_style('google-fonts-lato', 'https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap', array(), null);
 
-    // style.css の読み込み
+    // style.css の読み込み（ここは変更なし）
     wp_enqueue_style(
         'main-style',
         get_template_directory_uri() . '/public/assets/css/style.css',
@@ -21,7 +14,7 @@ function my_theme_scripts()
         filemtime(get_theme_file_path('/public/assets/css/style.css'))
     );
 
-    // script.js の読み込み
+    // script.js の読み込み（ここは変更なし）
     wp_enqueue_script(
         'main-js',
         get_template_directory_uri() . '/src/js/script.js',
