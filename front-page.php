@@ -242,4 +242,62 @@
     </div>
 </section>
 
+<section class="p-pricing" id="pricing">
+    <div class="p-pricing__inner inner">
+
+        <h1 class="p-pricing__title c-section__title">利用可能な料金プラン</h1>
+
+        <div class="p-pricing__cards">
+
+            <div class="p-pricing__card">
+                <div class="p-pricing__card-title">Fleeプラン</div>
+
+                <div class="p-pricing__card-price">0<span class="p-pricing__card-price--color">JPY /月</span></div>
+
+                <ul class="p-pricing__card-texts">
+                    <li class="p-pricing__card-text">共有カレンダーへの投稿制限</li>
+                    <li class="p-pricing__card-text">3件のチームへ参加可能</li>
+                    <li class="p-pricing__card-text">タスクのリマインド</li>
+                    <li class="p-pricing__card-text">ダッシュボードの拡張制限</li>
+                </ul>
+            </div>
+
+            <div class="p-pricing__card p-pricing__card--pro">
+                <div class="p-pricing__card-title">Proプラン</div>
+
+                <div class="p-pricing__card-price">3000<span class="p-pricing__card-price--color">JPY /月</span></div>
+
+                <ul class="p-pricing__card-texts">
+                    <li class="p-pricing__card-text">共有カレンダーへの無制限投稿</li>
+                    <li class="p-pricing__card-text">無制限のチームへ参加</li>
+                    <li class="p-pricing__card-text">ダッシュボードの拡張無制限</li>
+                    <li class="p-pricing__card-text">過去1年の履歴閲覧</li>
+                    <li class="p-pricing__card-text">無制限のチーム制作</li>
+                    <li class="p-pricing__card-text">AIアシスタント利用（500回/月）</li>
+                </ul>
+            </div>
+
+            <div class="p-pricing__card">
+                <div class="p-pricing__card-title">Businessプラン</div>
+
+                <div class="p-pricing__card-price">5000<span class="p-pricing__card-price--color">JPY /月</span></div>
+
+                <ul class="p-pricing__card-texts">
+                    <li class="p-pricing__card-text">Proプランと同等以上のアクセス</li>
+                    <li class="p-pricing__card-text">メンバーにプランの共有が可能</li>
+                    <li class="p-pricing__card-text">詳細なチームアクティビティログ</li>
+                    <li class="p-pricing__card-text">チームの役割＆許可設定</li>
+                    <li class="p-pricing__card-text">過去無制限の履歴閲覧</li>
+                    <li class="p-pricing__card-text">請求と支払いの一元化</li>
+                    <li class="p-pricing__card-text">AIアシスタント利用（1500回/月）</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <button class="p-pricing__button">今すぐ利用する</button>
+
+    </div>
+</section>
+
 <?php get_footer(); ?>
