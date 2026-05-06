@@ -11,3 +11,34 @@ document
     document.getElementById("js-drawer").classList.remove("is-open");
     document.getElementById("js-drawer-target").classList.remove("is-open");
   });
+
+//Videoのフェードイン
+document.addEventListener("DOMContentLoaded", () => {
+  // PCサイズ（768px以上）の時だけ実行
+  if (window.innerWidth >= 768) {
+    const videoContainers = document.querySelectorAll(".p-usage__video");
+
+    const observerOptions = {
+      root: null, // ブラウザのビューポートを基準にする
+      rootMargin: "0px",
+      threshold: 0.35, // 要素が35%見えたら実行
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // 画面内に入ったら is-show クラスを追加
+          entry.target.classList.add("is-show");
+
+          // 一度表示されたら監視を止める
+          observer.unobserve(entry.target);
+        } else {
+        }
+      });
+    }, observerOptions);
+
+    videoContainers.forEach((container) => {
+      observer.observe(container);
+    });
+  }
+});
