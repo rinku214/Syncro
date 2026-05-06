@@ -663,6 +663,131 @@ body.is-open {
 
 /* PCのみに適用 */
 
+.p-pricing {
+	background: #181818;
+}
+
+.p-pricing__inner {
+	padding-bottom: 100px;
+	padding-top: 60px;
+}
+
+.p-pricing__title {
+	color: #fff;
+}
+
+.p-pricing__cards {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	margin-bottom: 60px;
+	margin-inline: auto;
+	margin-top: 70px;
+	max-width: 960px;
+}
+
+.p-pricing__card {
+	background: #212121;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 16px;
+	color: #fff;
+	height: 450px;
+	margin-inline: auto;
+	max-width: 300px;
+	padding: 30px 24px;
+	width: 100%;
+}
+
+.p-pricing__card--pro {
+	background-image: linear-gradient(180deg, #212121 50%, rgba(16, 139, 200, 0.6));
+	border: 1px solid rgba(16, 139, 200, 0.6);
+	box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.2);
+	position: relative;
+}
+
+.p-pricing__card--pro::before {
+	background: #108bc8;
+	border-radius: 8px;
+	content: "一番人気";
+	font-size: 12px;
+	padding: 5px 8px;
+	position: absolute;
+	right: 24px;
+	top: 30px;
+}
+
+.p-pricing__card-title {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.p-pricing__card-price {
+	font-size: 35px;
+	font-weight: 700;
+	padding-left: 14px;
+	position: relative;
+}
+
+.p-pricing__card-price::before {
+	color: #9b9b9b;
+	content: "￥";
+	font-size: 15px;
+	font-weight: 700;
+	left: 0;
+	position: absolute;
+	top: 8px;
+}
+
+.p-pricing__card-price--color {
+	color: #9b9b9b;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.p-pricing__card-texts {
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	margin-top: 24px;
+	padding-top: 25px;
+}
+
+.p-pricing__card-text {
+	align-items: center;
+	font-size: 12px;
+	font-weight: 700;
+	padding-left: 26px;
+	position: relative;
+}
+
+.p-pricing__card-text::before {
+	background-image: url("../img/check.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 16px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 16px;
+}
+
+.p-pricing__button {
+	background-image: linear-gradient(90deg, #00aaff, #006699 91%);
+	border-radius: 32px;
+	box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	margin-inline: auto;
+	padding: 13px;
+	width: 300px;
+}
+
 @media screen and (min-width: 768px) {
 
 .p-usage__video {
@@ -932,6 +1057,10 @@ body.is-open {
 
 .p-usage__video {
 	max-width: 280px;
+}
+
+.p-pricing__cards {
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 
 }
