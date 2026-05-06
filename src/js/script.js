@@ -42,3 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+//Q&Aアコーディオン
+jQuery(".p-faq__item").on("click", function (e) {
+  if (jQuery(e.target).closest("a").length) return;
+
+  jQuery(this).toggleClass("is-open");
+
+  jQuery(this).find(".p-faq__item-A").stop(true, true).slideToggle(300);
+});
