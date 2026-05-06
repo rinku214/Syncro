@@ -54,7 +54,7 @@
 <section class="p-worries" id="worries">
     <div class="p-worries__inner inner">
 
-        <h1 class="p-worries__title c-section-title">チーム内で<br>こんなお悩みありませんか？</h1>
+        <h1 class="p-worries__title c-section__title">チーム内で<br>こんなお悩みありませんか？</h1>
 
         <div class="p-worries__items">
 
@@ -83,7 +83,7 @@
 <section class="p-features" id="features">
     <div class="p-features__inner inner">
 
-        <h1 class="p-features__title c-section-title">Syncroが<br><span class="o-accent-color">そんな問題を解決いたします！</span></h1>
+        <h1 class="p-features__title c-section__title">Syncroが<br><span class="o-accent-color">そんな問題を解決いたします！</span></h1>
 
     </div>
 
@@ -179,6 +179,67 @@
 
     </div>
 
+</section>
+
+<section class="p-usage" id="usage">
+    <div class="p-usage__inner inner">
+
+        <h1 class="p-usage__title c-section__title">多種多様なダッシュボードで<br class="o-br__pc">全てのプロジェクトをやりやすく</h1>
+
+        <div class="p-usage__cards">
+
+            <div class="p-usage__card">
+
+                <div class="p-usage__text">
+                    <div class="p-usage__head">思考をクリアに</div>
+                    <h1 class="p-usage__card-title">思考と同じ速さでタスクを書き出す</h1>
+                    <h2 class="p-usage__card-subtitle">Syncroは長年の経験や挑戦により、思考の整理を加速させるため改良を重ねてきました。多様な言語に対応し、タスクを瞬時に把握・整理します。</h2>
+                </div>
+
+                <div class="p-usage__video"><video src="<?php echo get_template_directory_uri() ?>/public/assets/video/App.mp4" autoplay loop muted playsinline></video></div>
+
+            </div>
+
+            <div class="p-usage__card">
+
+                <div class="p-usage__text">
+                    <div class="p-usage__head">誰にでもわかりやすく</div>
+                    <h1 class="p-usage__card-title">マニュアルの要らない直感的なUI</h1>
+                    <h2 class="p-usage__card-subtitle">Syncroは可能な限り効率を落とさないために、誰でもわかりやすいUIを研究し、誰もが機能の全てを使うことを目標に改善を続けています。</h2>
+                </div>
+
+                <div class="p-usage__video"><video src="<?php echo get_template_directory_uri() ?>/public/assets/video/UI.mp4" autoplay loop muted playsinline></video></div>
+
+
+            </div>
+
+            <div class="p-usage__card">
+
+                <div class="p-usage__text">
+                    <div class="p-usage__head">自分の状況を共有</div>
+                    <h1 class="p-usage__card-title">リソース管理で全体の効率を上げる</h1>
+                    <h2 class="p-usage__card-subtitle">自分のリソースを簡単・わかりやすく共有することで、プロジェクト全体の効率を上げることが可能です。プロジェクトを健全なペースで成功へ導けます。</h2>
+                </div>
+
+                <div class="p-usage__video"><video src="<?php echo get_template_directory_uri() ?>/public/assets/video/Resource.mp4" autoplay loop muted playsinline></video></div>
+
+            </div>
+
+            <div class="p-usage__card">
+
+                <div class="p-usage__text">
+                    <div class="p-usage__head">チームワークを整える</div>
+                    <h1 class="p-usage__card-title">チームのタスクをカレンダーに表示</h1>
+                    <h2 class="p-usage__card-subtitle">チーム内でのタスクの管理や状況を一覧・共有することが可能なカレンダーを搭載しているので、タスクの共有を効率的にミスを少なくおこなうことができます。</h2>
+                </div>
+
+                <div class="p-usage__video"><video src="<?php echo get_template_directory_uri() ?>/public/assets/video/Calendar.mp4" autoplay loop muted playsinline></video></div>
+
+            </div>
+
+        </div>
+
+    </div>
 </section>
 
 <?php get_footer(); ?>

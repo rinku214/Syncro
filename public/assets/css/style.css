@@ -294,7 +294,7 @@ body.is-open {
 	opacity: 0.8;
 }
 
-.c-section-title {
+.c-section__title {
 	font-size: 48px;
 	font-weight: 600;
 	text-align: center;
@@ -602,6 +602,83 @@ body.is-open {
 	padding-top: 16px;
 }
 
+.p-usage {
+	background: #fafafa;
+}
+
+.p-usage__inner {
+	padding-bottom: 200px;
+	padding-top: 100px;
+}
+
+.p-usage__cards {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 120px;
+}
+
+.p-usage__card {
+	display: grid;
+	gap: 100px;
+	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.p-usage__card-title {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+
+.p-usage__card-subtitle {
+	color: rgba(0, 0, 0, 0.75);
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.p-usage__head {
+	color: #108bc8;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.p-usage__video {
+	align-items: center;
+	display: flex;
+	height: auto;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 350px;
+	width: 100%;
+}
+
+.p-usage__video video {
+	aspect-ratio: 1/1;
+	border-radius: 16px;
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+/* PCのみに適用 */
+
+@media screen and (min-width: 768px) {
+
+.p-usage__video {
+	opacity: 0;
+	transform: translateY(40px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+	will-change: opacity, transform;
+}
+
+.p-usage__video.is-show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+}
+
 @media (max-width: 1107px) {
 
 .p-features__item-title {
@@ -699,6 +776,14 @@ body.is-open {
 	line-height: 24px;
 }
 
+.p-usage__card {
+	gap: 60px;
+}
+
+.p-usage__video video {
+	width: 100%;
+}
+
 }
 
 @media (max-width: 1000px) {
@@ -773,7 +858,7 @@ body.is-open {
 	display: block;
 }
 
-.c-section-title {
+.c-section__title {
 	font-size: 40px;
 }
 
@@ -828,11 +913,32 @@ body.is-open {
 	line-height: 20px;
 }
 
+.p-usage__card {
+	display: flex;
+	flex-direction: column;
+}
+
+.p-usage__card-title {
+	font-size: 27px;
+}
+
+.p-usage__card-subtitle {
+	font-size: 15px;
+}
+
+.p-usage__head {
+	font-size: 18px;
+}
+
+.p-usage__video {
+	max-width: 280px;
+}
+
 }
 
 @media (max-width: 374px) {
 
-.c-section-title {
+.c-section__title {
 	font-size: 32px;
 }
 

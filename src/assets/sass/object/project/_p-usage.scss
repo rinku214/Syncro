@@ -1,0 +1,112 @@
+@use "../../foundation/" as *;
+
+.p-usage {
+  background: #fafafa;
+
+  &__inner {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  &__title {
+  }
+
+  &__cards {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 100px;
+
+    @include mq("tb") {
+      gap: 60px;
+    }
+
+    @include mq("sp") {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-title {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 16px;
+
+      @include mq("sp") {
+        font-size: 27px;
+      }
+    }
+
+    &-subtitle {
+      font-size: 18px;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.75);
+
+      @include mq("sp") {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__text {
+  }
+
+  &__head {
+    font-weight: 700;
+    font-size: 20px;
+    color: $accent-text-blue;
+    margin-bottom: 5px;
+
+    @include mq("sp") {
+      font-size: 18px;
+    }
+  }
+
+  &__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 350px;
+
+    @include mq("sp") {
+      max-width: 280px;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      border-radius: 16px;
+
+      @include mq("tb") {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* PCのみに適用 */
+@media screen and (min-width: 768px) {
+  .p-usage__video {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+      opacity 0.8s ease,
+      transform 0.8s ease;
+    will-change: opacity, transform;
+  }
+
+  .p-usage__video.is-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
