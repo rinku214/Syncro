@@ -1,16 +1,33 @@
-document.getElementById("js-drawer").addEventListener("click", function () {
-  this.classList.toggle("is-open");
-  document.getElementById("js-drawer-target").classList.toggle("is-open");
-  document.getElementById("js-drawer-overlay").classList.toggle("is-open");
+// header drawer
+// 要素を変数にまとめる
+const drawerIcon = document.getElementById("js-drawer");
+const drawerTarget = document.getElementById("js-drawer-target");
+const drawerOverlay = document.getElementById("js-drawer-overlay");
+const drawerLinks = document.querySelectorAll(".l-header__item a"); // aタグを対象にする
+
+// ドロワーを閉じる関数
+const closeDrawer = () => {
+  drawerIcon.classList.remove("is-open");
+  drawerTarget.classList.remove("is-open");
+  drawerOverlay.classList.remove("is-open");
+  drawerIcon.setAttribute("aria-expanded", "false"); // アクセシビリティへの配慮
+};
+
+// ハンバーガーアイコンクリック時
+drawerIcon.addEventListener("click", function () {
+  const isOpen = this.classList.toggle("is-open");
+  drawerTarget.classList.toggle("is-open");
+  drawerOverlay.classList.toggle("is-open");
+  this.setAttribute("aria-expanded", isOpen);
 });
 
-document
-  .getElementById("js-drawer-overlay")
-  .addEventListener("click", function () {
-    this.classList.remove("is-open");
-    document.getElementById("js-drawer").classList.remove("is-open");
-    document.getElementById("js-drawer-target").classList.remove("is-open");
-  });
+// オーバーレイクリック時
+drawerOverlay.addEventListener("click", closeDrawer);
+
+// ページ内リンククリック時（全てのリンクに対応）
+drawerLinks.forEach((link) => {
+  link.addEventListener("click", closeDrawer);
+});
 
 //Videoのフェードイン
 document.addEventListener("DOMContentLoaded", () => {

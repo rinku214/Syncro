@@ -491,6 +491,11 @@ body.is-open {
 	width: 1px;
 }
 
+.p-hero__review-Apple img {
+	height: 24px;
+	width: 26px;
+}
+
 .p-hero__review-Android {
 	align-items: center;
 	display: flex;
@@ -509,6 +514,11 @@ body.is-open {
 	right: 22px;
 	top: -9px;
 	width: 1px;
+}
+
+.p-hero__review-Android img {
+	height: 24px;
+	width: 26px;
 }
 
 .p-hero__button {
@@ -531,7 +541,7 @@ body.is-open {
 }
 
 .p-worries {
-	background: #fafafa;
+	background-color: #fafafa;
 }
 
 .p-worries__inner {
@@ -590,9 +600,7 @@ body.is-open {
 	display: flex;
 	flex-direction: column;
 	gap: 80px;
-	margin-inline: auto;
 	margin-top: 192px;
-	max-width: 1440px;
 	padding-bottom: 180px;
 }
 
@@ -617,7 +625,7 @@ body.is-open {
 }
 
 .p-features__item:nth-child(1)::after {
-	background-image: url("../img/feature-image-01.png");
+	background-image: url("../img/feature-image-01.webp");
 	bottom: -4px;
 	display: block;
 	height: 333px;
@@ -626,7 +634,7 @@ body.is-open {
 }
 
 .p-features__item:nth-child(2)::before {
-	background-image: url("../img/feature-image-02.png");
+	background-image: url("../img/feature-image-02.webp");
 	bottom: -4px;
 	display: block;
 	height: 333px;
@@ -635,7 +643,7 @@ body.is-open {
 }
 
 .p-features__item:nth-child(3)::after {
-	background-image: url("../img/feature-image-03.png");
+	background-image: url("../img/feature-image-03.webp");
 	bottom: -4px;
 	display: block;
 	height: 333px;
@@ -644,7 +652,7 @@ body.is-open {
 }
 
 .p-features__item:nth-child(4)::before {
-	background-image: url("../img/feature-image-04.png");
+	background-image: url("../img/feature-image-04.webp");
 	bottom: -4px;
 	display: block;
 	height: 333px;

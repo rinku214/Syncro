@@ -13,10 +13,10 @@
                 <div class="p-hero__app">
                     <div class="p-hero__review">
                         <span class="p-hero__review-Apple">
-                            <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/Apple-icon.svg" alt="Apple">
+                            <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/Apple-icon.svg" alt="Apple" width="26px" height="24px" fetchpriority="high" loading="eager">
                         </span>
                         <span class="p-hero__review-Android">
-                            <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/Android-icon.svg" alt="Android">
+                            <img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/Android-icon.svg" alt="Android" width="26px" height="24px" fetchpriority="high" loading="eager">
                         </span>
                         123000 + ★★★★★ 件のレビュー
                     </div>
@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            <div class="p-hero__image"><img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/SyncroApp-image.png" alt="アプリ画像"></div>
+            <div class="p-hero__image"><img src="<?php echo get_template_directory_uri(); ?>/public/assets/img/SyncroApp-image.webp" alt="アプリ画像" fetchpriority="high" loading="eager" width="350px" height="350px"></div>
         </div>
 
     </div>
