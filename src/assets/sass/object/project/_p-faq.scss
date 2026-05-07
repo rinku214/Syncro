@@ -48,6 +48,10 @@
       right: 38px;
       width: 2px;
       height: 30px;
+
+      @include mq("tb") {
+        height: 25px;
+      }
     }
 
     &::before {
@@ -56,6 +60,12 @@
       right: 24px;
       width: 30px;
       height: 2px;
+
+      @include mq("tb") {
+        width: 25px;
+        top: 31px;
+        right: 26px;
+      }
     }
 
     &-Q {
@@ -64,6 +74,7 @@
       align-items: center;
       user-select: none;
       -webkit-user-select: none;
+      padding-right: 30px;
 
       &::before {
         content: "Q.";

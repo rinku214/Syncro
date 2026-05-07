@@ -233,7 +233,7 @@
         <div class="p-pricing__cards">
 
             <div class="p-pricing__card">
-                <div class="p-pricing__card-title">Fleeプラン</div>
+                <div class="p-pricing__card-title">Freeプラン</div>
 
                 <div class="p-pricing__card-price">0<span class="p-pricing__card-price--color">JPY /月</span></div>
 

@@ -1,1 +1,129 @@
 @use "../foundation/" as *;
+
+.l-footer {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  &__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    @include mq("tb") {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+    }
+  }
+
+  &__content {
+    width: fit-content;
+    margin-inline: auto;
+
+    @include mq("tb") {
+      margin-inline: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__main-title {
+    font-size: 58px;
+    margin-bottom: 18px;
+  }
+
+  &__sub-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.65);
+    margin-bottom: 36px;
+  }
+
+  &__sns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &-icon {
+      background: #fff;
+      border: 0.5px solid rgba(0, 0, 0, 0.35);
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__sitemap {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.65);
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $accent-blue;
+    }
+  }
+
+  &__DLtitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__download {
+  }
+
+  &__login {
+  }
+
+  &__copyright {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-top: 0.1px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.4);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2;
+  }
+}
