@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex" />
 
-    <title></title>
+    <meta name="description" content="Todoアプリ、Syncroです。チームでの利用を目的とし大規模開発や開発時に利用が可能になっています。誰が、何を、いつまでに、を即座に判断可能になるアプリです。">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <title>Syncro</title>
 
     <?php wp_head() ?>
 </head>

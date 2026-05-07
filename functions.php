@@ -1,12 +1,13 @@
 <?php
+add_filter('script_loader_tag', function ($tag, $handle) {
+    // 管理画面や特定のJSを除外したい場合はここで分岐
+    if (is_admin()) return $tag;
+    return str_replace(' src', ' defer src', $tag);
+}, 10, 2);
+
 function my_theme_scripts()
 {
-    // Google Fonts を1つずつ正しく読み込む
-    wp_enqueue_style('google-fonts-noto', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap', array(), null);
-    wp_enqueue_style('google-fonts-caudex', 'https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap', array(), null);
-    wp_enqueue_style('google-fonts-lato', 'https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap', array(), null);
-
-    // style.css の読み込み（ここは変更なし）
+    // style.css の読み込み
     wp_enqueue_style(
         'main-style',
         get_template_directory_uri() . '/public/assets/css/style.css',
@@ -14,7 +15,7 @@ function my_theme_scripts()
         filemtime(get_theme_file_path('/public/assets/css/style.css'))
     );
 
-    // script.js の読み込み（ここは変更なし）
+    // script.js の読み込み
     wp_enqueue_script(
         'main-js',
         get_template_directory_uri() . '/src/js/script.js',
